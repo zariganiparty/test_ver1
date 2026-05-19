@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/simulate" method="POST" enctype="multipart/form-data">
+
+        <h3>音源ファイル</h3>
+        <input type="file" name="wavfile" enctype="multipart/form-data">
+
+        <h3>部屋</h3>
+        <input type="text" name="hh" placeholder="部屋の幅"><br>
+        <input type="text" name="ho" placeholder="部屋の奥行"><br>
+        <input type="text" name="ht" placeholder="部屋の高さ"><br>
+
+        <h3>マイクの位置</h3>
+        <input type="text" name="mh" placeholder="マイクの位置の幅"><br>
+        <input type="text" name="mo" placeholder="マイクの位置の奥行"><br>
+        <input type="text" name="mt" placeholder="マイクの位置の高さ"><br>
+
+        <h3>音源の位置</h3>
+        <input type="text" name="oh" placeholder="音源の位置の幅"><br>
+        <input type="text" name="oo" placeholder="音源の位置の奥行"><br>
+        <input type="text" name="ot" placeholder="音源の位置の高さ"><br><br><br>
+
+        <button type="submit">シミュレーション</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

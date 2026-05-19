@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>結果</h2>
+    <h3>プレビュー</h3>
+
+    <audio controls>
+        <source
+            src="{{ url_for('static', filename='outputs/' + filename)}}"
+            type="audio/wav">
+    </audio>
+
+    <br><br>
+
+    <a href="{{ url_for('static', filename='outputs/' + filename)}}" download>
+        wavをダウンロード
+    </a>
+
+    <a href="/">戻る</a>
+</body>
+</html>
